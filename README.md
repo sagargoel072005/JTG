@@ -1,4 +1,4 @@
-# 🍱 JTGeats – Frontend Home Assignment
+# JTGeats – Frontend Home Assignment
 
 A pixel-perfect, responsive static website for a home-cooked food delivery service built using **HTML5, CSS3, and Vanilla JavaScript**.
 
@@ -6,16 +6,16 @@ This project was developed as part of the **Josh Technology Group (JTG) Frontend
 
 ---
 
-# 🔗 Project Links
+# Project Links
 
-| Resource             | Link                                   |
-| -------------------- | -------------------------------------- |
-| 🌐 Live Demo         | https://sagargoel163.netlify.app/      |
-| 💻 GitHub Repository | https://github.com/sagargoel072005/JTG |
+| Resource          | Link                                   |
+| ----------------- | -------------------------------------- |
+| Live Demo         | https://sagargoel163.netlify.app/      |
+| GitHub Repository | https://github.com/sagargoel072005/JTG |
 
 ---
 
-# 🚀 Tech Stack
+# Tech Stack
 
 * HTML5 (Semantic Elements)
 * CSS3
@@ -30,7 +30,7 @@ This project was developed as part of the **Josh Technology Group (JTG) Frontend
 
 ---
 
-# ⭐ Key Highlights
+# Key Highlights
 
 * Pixel-perfect implementation
 * Component-based architecture
@@ -43,7 +43,7 @@ This project was developed as part of the **Josh Technology Group (JTG) Frontend
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 JTG/
@@ -86,7 +86,7 @@ JTG/
 
 ---
 
-# 🎯 Implemented Sections
+# Implemented Sections
 
 ### Header
 
@@ -135,7 +135,7 @@ JTG/
 
 ---
 
-# ✨ Features
+# Features
 
 ## Component-Based Architecture
 
@@ -189,7 +189,7 @@ Tested on:
 
 ---
 
-# 🎨 Pixel Perfect Implementation
+# Pixel Perfect Implementation
 
 The UI was matched against the Figma design using the PerfectPixel Chrome extension.
 
@@ -205,29 +205,21 @@ At a 1440px viewport, the implementation closely matches the provided mockup.
 
 ---
 
-# ⚡ Performance & Best Practices
+# Performance & Best Practices
 
-✔ Semantic HTML5
-
-✔ Reusable component architecture
-
-✔ Clean folder structure
-
-✔ Optimized assets
-
-✔ Maintainable CSS
-
-✔ Modular JavaScript
-
-✔ Cross-browser support
-
-✔ Responsive layout
-
-✔ Pixel-perfect implementation
+* Semantic HTML5
+* Reusable component architecture
+* Clean folder structure
+* Optimized assets
+* Maintainable CSS
+* Modular JavaScript
+* Cross-browser support
+* Responsive layout
+* Pixel-perfect implementation
 
 ---
 
-# ▶️ Running Locally
+# Running Locally
 
 No build process is required.
 
@@ -245,7 +237,7 @@ Live Server (VS Code)
 
 ---
 
-# 📌 Assignment Constraints Followed
+# Assignment Constraints Followed
 
 * No React
 * No Angular
@@ -258,7 +250,8 @@ Only HTML5, CSS3 and Vanilla JavaScript were used.
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Sagar Goel**
-📧 [sagargoel163@gmail.com](mailto:sagargoel163@gmail.com)
+
+Email: [sagargoel163@gmail.com](mailto:sagargoel163@gmail.com)
