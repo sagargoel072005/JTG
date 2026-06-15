@@ -1,0 +1,181 @@
+.home-kitchen {
+  padding-top: 95px;
+  padding-bottom: 80px;
+}
+
+.home-kitchen .container {
+  max-width: 1180px;
+}
+
+.home-kitchen .section-title {
+  margin-bottom: 40px;
+  line-height: 48px;
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--clr-text-primary);
+  transform: translateX(-60px);
+}
+
+.kitchen-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 277px);
+  column-gap: 24px;
+  row-gap: 40px;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.dish-card {
+  width: 277px;
+  min-height: 337px;
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  will-change: transform;
+  transform: translateX(-60px);
+}
+
+.dish-card:hover {
+  transform: translateX(-60px) scale(1.03);
+  box-shadow: var(--shadow-md);
+}
+
+.dish-card__image-wrapper { position: relative; }
+
+.dish-card__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.dish-card__star {
+  width: 15px;
+  height: 15px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.dish-card__discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-accent);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  z-index: 2;
+}
+
+.dish-card__content { padding: 12px 14px; }
+
+.dish-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dish-card__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  color: var(--clr-text-primary);
+}
+
+.dish-card__price {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--clr-text-primary);
+}
+
+.dish-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dish-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+  padding: 0 6px;
+  background: var(--clr-surface-alt);
+  border: 1px solid var(--clr-border-alt);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  line-height: 1;
+}
+
+.dish-card__time {
+  min-width: 68px;
+  height: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-surface);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  color: var(--clr-text-dark);
+  box-shadow: -2px 0 0 var(--clr-shadow-grey), 2px 0 0 var(--clr-shadow-grey);
+}
+
+.dish-card__add-btn {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: var(--clr-accent);
+  color: var(--clr-white);
+  border-radius: var(--radius-md);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .kitchen-grid          { grid-template-columns: repeat(3, 277px); width: auto; }
+  .home-kitchen .section-title { transform: translateX(-30px); }
+  .dish-card             { transform: translateX(-30px); }
+  .dish-card:hover       { transform: translateX(-30px) scale(1.03); }
+}
+
+@media (max-width: 900px) {
+  .kitchen-grid          { grid-template-columns: repeat(2, 277px); }
+  .home-kitchen          { padding-top: 60px; padding-bottom: 60px; }
+  .home-kitchen .section-title { transform: translateX(0); font-size: var(--fs-xl); line-height: 1.3; }
+  .dish-card             { transform: translateX(0); }
+  .dish-card:hover       { transform: scale(1.03); }
+}
+
+@media (max-width: 640px) {
+  .kitchen-grid          { grid-template-columns: 1fr; justify-items: center; }
+  .home-kitchen          { padding-top: 40px; padding-bottom: 40px; }
+  .home-kitchen .section-title { font-size: var(--fs-lg); margin-bottom: 24px; }
+  .dish-card {
+    width: 100%;
+    max-width: 320px;
+    margin-inline: auto;
+    transform: translateX(0);
+  }
+  .dish-card:hover       { transform: scale(1.03); }
+  .dish-card__image      { height: 200px; }
+}
+
+@media (max-width: 400px) {
+  .dish-card             { max-width: 280px; }
+}

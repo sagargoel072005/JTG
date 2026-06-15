@@ -1,0 +1,111 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--clr-primary);
+  box-shadow: none;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.logo {
+  font-family: var(--ff-display);
+  font-size: var(--fs-xl);
+  line-height: 1;
+  letter-spacing: -0.5px;
+  color: var(--clr-white);
+  transform: translateX(-60px);
+}
+
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+  transform: translateX(-20px);
+}
+
+.main-nav a {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+  transition: color var(--transition-fast);
+}
+
+.main-nav a:hover { color: var(--clr-bg-light); }
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-white);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+  transform: translateX(-40px);
+}
+
+.icon-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-btn:hover { color: var(--clr-bg-light); }
+
+.cart-btn { position: relative; }
+
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  right: -2px;
+  background: var(--clr-accent);
+  color: var(--clr-white);
+  font-size: 0;
+  font-weight: var(--fw-bold);
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+@media (max-width: 1024px) {
+  .logo                { font-size: var(--fs-lg); transform: translateX(-30px); }
+  .main-nav ul         { gap: 24px; transform: translateX(-10px); }
+  .main-nav a          { font-size: var(--fs-base); }
+  .icon-btn            { transform: translateX(-20px); }
+  .header-inner        { height: 72px; }
+}
+
+@media (max-width: 768px) {
+  .main-nav            { display: none; }
+  .header-inner        { height: 56px; }
+  .logo                { font-size: var(--fs-md); transform: translateX(0); }
+  .icon-btn            { transform: translateX(0); }
+  .header-icons        { gap: 12px; }
+}
+
+@media (max-width: 480px) {
+  .logo                { font-size: var(--fs-base); }
+  .icon-btn img        { width: 18px; height: 18px; }
+}
